@@ -23,9 +23,16 @@ The controller averages eight soil-moisture ADC samples, maps them to a calibrat
 - **Real debugging under constraints:** NeoPixel refreshes were starving the IR decoder (the library disables interrupts during `show()`). I throttled LED frames to ~90 ms and rewrote the watering animation, which fixed remote responsiveness. `tone()` conflicted with IR timing, so I replaced it with a manual 2 kHz piezo toggle.
 - **Robust IR handling:** matches multiple NEC code variants (24-bit families, RAW32 byte orders, 8-bit fallbacks) so different remotes work.
 
+## Schematic
+
+Full system schematic: soil moisture sensor, HC-SR04 ultrasonic tank sensor, 16x2 LCD with contrast pot, NeoPixel ring, IR receiver, piezo, and the NPN low-side pump driver with flyback diode.
+
+![Circuit schematic](plant-watering-system_schematic.png)
+
 ## Files
 
 - `plant_watering_system.ino` — full commented source (~500 lines)
+- `plant-watering-system_schematic.png` — circuit schematic (Tinkercad)
 
 ## Links
 
