@@ -10,7 +10,7 @@ Closed-loop irrigation controller on an Arduino Uno: soil moisture sensing, tank
 
 **Objective 1 — Design and complete robotic and embedded systems solutions that address real-world situations and challenges.**
 
-Over- and under-watering is a real problem in agriculture and home growing. This system waters only when the soil actually needs it, refuses to run the pump dry, and tells the user exactly what it is doing at all times.
+**How it meets the objective:** It takes a real problem — over- and under-watering plants — and solves it end to end: the system senses actual soil condition, waters only when needed, refuses to run the pump dry, and reports everything on an LCD and LED ring.
 
 ## How It Works
 
